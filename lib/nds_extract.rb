@@ -110,8 +110,10 @@ def movies_with_directors_set(source)
     dir_info_hash = source[index]
     director_name = dir_info_hash[:name]
     directors_movies = dir_info_hash[:movies]
-    a_o_a_movies_by_director << movies_with_director_key
+    a_o_a_movies_by_director << movies_with_director_key(director_name, directors_movies)
+    index += 1
 end
+
 
 # ----------------    End of Your Code Region --------------------
 # Don't edit the following code! Make the methods above work with this method
