@@ -112,6 +112,9 @@ def movies_with_directors_set(source)
     directors_movies = dir_info_hash[:movies]
     a_o_a_movies_by_director << movies_with_director_key(director_name, directors_movies)
     index += 1
+  end
+  
+  a_o_a_movies_by_director
 end
 
 
